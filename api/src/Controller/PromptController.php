@@ -40,7 +40,7 @@ class PromptController extends AbstractController {
     foreach ($story_line_objects as $story_line_object) {
       $prompt_lines[] = $story_line_object->getLine();
     }
-    $prompt_lines = array_slice($prompt_lines, -3, 3);
+    $prompt_lines = array_slice($prompt_lines, -5, 5);
 
     $elements = [];
     foreach ($elements_objects as $elements_object) {
