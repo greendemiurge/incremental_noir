@@ -2,6 +2,12 @@ import React from "react";
 import isEmpty from "lodash/isEmpty";
 
 class PromptLines extends React.Component {
+  componentDidUpdate() {
+    if (this.newLine) {
+      this.newLine.scrollIntoView(false);
+    }
+  }
+
   getLines() {
     const {
       newLine,
@@ -21,9 +27,15 @@ class PromptLines extends React.Component {
     }
 
     if (newLine) {
-      lines.push(<p className="new-prompt-line" key={newLine}>
+      lines.push(
+        <p
+          className="new-prompt-line"
+          key={newLine}
+          ref={(el) => {this.newLine = el;}}
+        >
         {newLineArrayProcessed}
-      </p>);
+      </p>
+      );
     }
 
     return lines;
