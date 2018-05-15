@@ -177,7 +177,7 @@ body {
 
 .prompt-lines {
   overflow: auto;
-  height: 30%;
+  height: 60%;
   width: 98%;
   margin: 0 auto;
   padding: 10px 6px;
@@ -188,7 +188,7 @@ body {
 }
 
 .typewriter {
-  height: 70%;
+  height: 40%;
   background-image: url("images/wyckoff.png");
   opacity: 0.9;
   background-repeat: no-repeat;
