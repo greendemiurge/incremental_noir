@@ -1,0 +1,270 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #000;
+  color: #efefef;
+}
+
+.return-home {
+  grid-column: 1;
+  grid-row: 1;
+  font-size: 18px;
+}
+
+.wrapper .story {
+  display: grid;
+  grid-template-columns: 2fr 10fr 2fr;
+  grid-template-rows: 2fr 2fr 18fr 12fr 1fr;
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 5px;
+  height: calc(100vh - 10px);
+}
+
+.story-locator {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.story-display {
+  padding: 16px;
+  background-color: #fff;
+  color: #000;
+  font-size: 18px;
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.story-authors-display {
+  padding: 16px;
+  font-size: 20px;
+
+  grid-column: 2;
+  grid-row: 4;
+}
+
+.story-authors-display ul {
+  padding: 0;
+}
+
+.story-authors-display ul li {
+  list-style-type: none;
+  cursor: pointer;
+  float: left;
+}
+
+.wrapper .home {
+  display: grid;
+  grid-template-columns: 2fr 5fr 5fr 5fr 2fr;
+  grid-template-rows: 5fr 2fr 2fr 1fr 10fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 5px;
+  height: calc(100vh - 10px);
+}
+
+.home-message {
+  grid-column: 2 / 5;
+  grid-row: 2;
+}
+
+.home-button {
+  font-size: 24px;
+  background-color: #eee;
+  border: #777 solid 3px;
+  border-radius: 3px;
+}
+
+.home-add-line {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.home-get-random {
+  grid-column: 3;
+  grid-row: 3;
+}
+
+.home-get-by-locator {
+  grid-column: 4;
+  grid-row: 3;
+}
+
+.home-get-by-locator-input {
+  font-size: 24px;
+  grid-column: 4;
+  grid-row: 4;
+  text-align: center;
+}
+
+.home-get-by-locator-error {
+  font-size: 24px;
+  grid-column: 4;
+  grid-row: 5;
+  text-align: center;
+}
+
+.wrapper .add-line {
+  display: grid;
+  grid-template-columns: 1fr 5fr 2fr;
+  grid-template-rows: 1fr 10fr 1fr 9fr 2fr;
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 5px;
+  height: calc(100vh - 10px);
+}
+
+.wrapper .add-line > div {
+  padding: 10px;
+  border: 1px solid #777;
+}
+
+.submit-error {
+  color: #000;
+  grid-column: 2;
+  grid-row: 3 / 5;
+  background-color: #fff;
+  margin-top: 40px;
+  margin-bottom: 120px;
+  z-index: 999;
+  border: 3px solid orange !important;
+}
+
+.word-list-div {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.word-list-ul {
+  list-style-type: none;
+  margin-left: 0px;
+  padding: 0px;
+}
+
+.word-list-li {
+  margin-bottom: 2px;
+}
+
+
+.instructions-div {
+  grid-column: 2;
+  grid-row: 1 / 3;
+}
+
+.add-new-div {
+  grid-column: 3;
+  grid-row: 4;
+}
+
+.plot-elements {
+  overflow: auto;
+  grid-column: 3;
+  grid-row: 1 / 4;
+}
+
+.current-story-div {
+  grid-column: 1 / 3;
+  grid-row: 3 / 6;
+  position: relative;
+}
+
+.prompt-lines {
+  overflow: auto;
+  height: 30%;
+  width: 98%;
+  margin: 0 auto;
+  padding: 10px 6px;
+  opacity: 0.97;
+  background-color: #fff;
+  color: #000;
+  font-family: Courier, "Courier New", monospace;
+}
+
+.typewriter {
+  height: 70%;
+  background-image: url("images/wyckoff.png");
+  opacity: 0.9;
+  background-repeat: no-repeat;
+  /*background-size: auto;*/
+  background-size: cover;
+  background-position: center top;
+}
+
+.prompt-line {
+  margin: 6px 3px;
+}
+
+.story-inputs {
+  opacity: 1;
+  position: absolute;
+  bottom: 0;
+  width: 98%;
+  background-color: rgba(0, 0, 0, .8);
+  border: 1px orange solid;
+  padding: 6px 0 0 6px;
+}
+
+.sentence-form-input {
+  width: 98%;
+}
+
+.publish {
+  grid-column: 3;
+  grid-row: 5;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.add-author-form {
+  /*position: absolute;*/
+  /*right: 0;*/
+  float: right;
+  /*width: 100%;*/
+  margin: 10px 20px;
+}
+
+.add-author-input {
+  height: 18px;
+  /*width: 40%;*/
+}
+
+.add-new-plot-element-input {
+  width: 100%;
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+
+.add-new-select-div {
+  margin-top: 5px;
+  padding: 5px 0;
+
+}
+
+.add-new-select-div select {
+  font-size: 18px;
+}
+
+.selection-div {
+  width: 50%;
+}
+
+h2 {
+  margin: 0px;
+}
+
+.help-text-span {
+  font-size: 0.9em;
+  font-style: italic;
+  line-height: 0.5em;
+}
+
+.new-element-span {
+  color: green;
+}

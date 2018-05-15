@@ -1,0 +1,8 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+
+
+#song_api_write_song:
+#    path: /api/v1/prompt
+#    controller: App\Controller\PromptController::getPrompt
